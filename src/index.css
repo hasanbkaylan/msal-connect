@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-base: #191b22;
+    --bg-surface: #282c37;
+    --bg-surface-hover: #313543;
+    --bg-elevated: #393f4f;
+    --text-primary: #ffffff;
+    --text-secondary: #9baec8;
+    --text-muted: #606984;
+    --primary: #6364ff;
+    --primary-hover: #5657ea;
+    --primary-light: rgba(99, 100, 255, 0.15);
+    --accent-fav: #ffaa00;
+    --accent-boost: #15d68d;
+    --border-color: #393f4f;
+    --border-subtle: #2b303c;
+  }
+
+  [data-theme="light"] {
+    --bg-base: #f2f4f8;
+    --bg-surface: #ffffff;
+    --bg-surface-hover: #f7f8fa;
+    --bg-elevated: #e6eaf0;
+    --text-primary: #1e232a;
+    --text-secondary: #4f5b66;
+    --text-muted: #8c97a7;
+    --primary: #595aff;
+    --primary-hover: #4849e8;
+    --primary-light: rgba(89, 90, 255, 0.1);
+    --accent-fav: #d97706;
+    --accent-boost: #059669;
+    --border-color: #dbe2ea;
+    --border-subtle: #eaeff5;
+  }
+
+  [data-theme="mastodon-classic"] {
+    --bg-base: #1f232b;
+    --bg-surface: #282c37;
+    --bg-surface-hover: #313543;
+    --bg-elevated: #393f4f;
+    --text-primary: #ffffff;
+    --text-secondary: #9baec8;
+    --text-muted: #606984;
+    --primary: #6364ff;
+    --primary-hover: #5657ea;
+    --primary-light: rgba(99, 100, 255, 0.15);
+    --accent-fav: #ffaa00;
+    --accent-boost: #15d68d;
+    --border-color: #393f4f;
+    --border-subtle: #2b303c;
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
