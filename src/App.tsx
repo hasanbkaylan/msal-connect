@@ -170,33 +170,35 @@ export default function App() {
 
   // Filter statuses by active view
   const getFilteredStatuses = () => {
+    const list = Array.isArray(statuses) ? statuses : [];
+
     if (selectedTag) {
-      return statuses.filter(
+      return list.filter(
         (s) =>
-          s.content.toLowerCase().includes(selectedTag.toLowerCase()) ||
-          s.tags.some((t) => t.name.toLowerCase() === selectedTag.toLowerCase())
+          (s.content || '').toLowerCase().includes(selectedTag.toLowerCase()) ||
+          (Array.isArray(s.tags) && s.tags.some((t) => t && t.name && t.name.toLowerCase() === selectedTag.toLowerCase()))
       );
     }
 
     if (mobileSearchQuery.trim()) {
-      return statuses.filter((s) =>
-        s.content.toLowerCase().includes(mobileSearchQuery.toLowerCase())
+      return list.filter((s) =>
+        (s.content || '').toLowerCase().includes(mobileSearchQuery.toLowerCase())
       );
     }
 
     switch (timeline) {
       case 'home':
-        return statuses;
+        return list;
       case 'local':
-        return statuses.filter((s) => s.account.acct.includes('msal.org'));
+        return list.filter((s) => s.account && typeof s.account.acct === 'string' && s.account.acct.includes('msal'));
       case 'federated':
-        return statuses;
+        return list;
       case 'bookmarks':
-        return statuses.filter((s) => s.bookmarked);
+        return list.filter((s) => s.bookmarked);
       case 'favourites':
-        return statuses.filter((s) => s.favourited);
+        return list.filter((s) => s.favourited);
       default:
-        return statuses;
+        return list;
     }
   };
 

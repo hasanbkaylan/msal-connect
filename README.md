@@ -1,24 +1,27 @@
-# 🚀 MSAL Connect — Mastodon Fediverse Web Client
+# 🎓 MSAL Connect — Mehmet Serttaş Anadolu Lisesi Sosyal Ağı
 
-Modern, hızlı ve açık web (ActivityPub / Fediverse) mimarisine uygun bağımsız Mastodon klonu.
+Mehmet Serttaş Anadolu Lisesi için geliştirilmiş modern, hızlı ve açık web (ActivityPub / Mastodon Fediverse) mimarisine uygun okul sosyal medya platformu.
 
 ## ✨ Özellikler
 
+- **🏫 Mehmet Serttaş Anadolu Lisesi Topluluğu:**
+  - Öğrenciler, öğretmenler, okul kulüpleri ve okul idaresi için merkeziyetsiz dijital kampüs alanı.
+  - Okul etkinlikleri, sınav takvimleri, bilim fuarları, turnuvalar ve duyurular.
 - **📱 Kusursuz Mobil & Masaüstü Deneyimi:**
-  - **Masaüstü:** Mastodon'un efsanevi çoklu sütunlu arayüzü (Sol Navigasyon, Gönderi Akışı, Keşfet & Gündem Sütunu).
-  - **Mobil:** Akıcı alt gezinme çubuğu (Bottom Navigation Bar) ve hızlı aksiyon butonu.
+  - **Masaüstü:** Mastodon tarzı çoklu sütunlu arayüz (Sol Navigasyon, Gönderi Akışı, Okul Gündemi & Kulüpler Paneli).
+  - **Mobil:** Akıcı alt gezinme çubuğu (Bottom Navigation Bar) ve anlık gönderi paylaşım butonu.
 - **🐘 Mastodon & Fediverse Fonksiyonları:**
-  - Durum güncellemesi / Toot gönderme (500 karakter desteği).
+  - Durum güncellemesi / Gönderi paylaşımı (500 karakter desteği).
   - **İçerik Uyarısı (CW / Spoiler Warning)** desteği ve tek tıkla gizleme/gösterme.
-  - **İnteraktif Anketler (Polls):** Anket oluşturma, oy kullanma, oy oranları ve konfeti animasyonu.
-  - **Medya Galerisi:** Çoklu görsel yükleme, hassas medya (NSFW) bulanıklaştırma koruması ve Lightbox büyütme.
-  - **Zaman Tünelleri:** Ana Sayfa, Yerel Sunucu, Genel Fediverse, Keşfet, Bildirimler, Yer İmleri ve Favoriler.
-  - **Profil Sayfası:** Kapak fotoğrafı, biyografi, ActivityPub onaylı alanlar ve takipçi sayıları.
-- **⚡ Supabase Entegrasyonu:**
-  - Demo verileriyle doğrudan çalışır (LocalStorage üzerinde anında reaktif durum yönetimi).
-  - Ayarlar panelinden dilediğiniz zaman Supabase URL ve Anon Key girip bağlantıyı test edebilir, kendi veritabanınıza geçiş yapabilirsiniz.
+  - **İnteraktif Okul Anketleri (Polls):** Anket oluşturma, oy kullanma, oy oranları ve konfeti animasyonu.
+  - **Medya Galerisi:** Çoklu görsel yükleme, Lightbox büyütme.
+  - **Zaman Tünelleri:** Ana Sayfa, MSAL Yerel Ağ, Fediverse, Keşfet, Bildirimler, Yer İmleri ve Favoriler.
+  - **Profil Sayfası:** Öğrenci/kulüp profili, biyografi, ActivityPub onaylı alanlar ve takip sistemi.
+- **⚡ Supabase & Güvenilir Veri Mimarisi:**
+  - Hataya dayanıklı akıllı yerel depolama ve React ErrorBoundary koruması sayesinde beyaz ekran hatası yaşanmaz.
+  - Ayarlar panelinden dilediğiniz zaman harici Supabase veritabanına bağlanabilir.
 - **🌐 GitHub Pages Yayınına Tam Uyumlu:**
-  - `base: './'` konfigürasyonu ile GitHub Pages alt dizinlerinde (örneğin `username.github.io/repo/`) hatasız ve varlık yolları bozulmadan çalışır.
+  - `base: './'` konfigürasyonu ile GitHub Pages alt dizinlerinde hatasız ve varlık yolları bozulmadan çalışır.
   - Otomatik `.github/workflows/deploy.yml` GitHub Actions yapılandırması hazırdır.
 
 ## 🛠️ Yerel Geliştirme

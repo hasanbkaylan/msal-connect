@@ -42,7 +42,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, o
   };
 
   const handleResetData = () => {
-    if (window.confirm('Tüm veriler varsayılan MSAL Connect demo durumuna sıfırlansın mı?')) {
+    if (window.confirm('Tüm veriler varsayılan Mehmet Serttaş Anadolu Lisesi (MSAL Connect) durumuna sıfırlansın mı?')) {
       StorageService.resetToDefaults();
       window.location.reload();
     }
@@ -180,8 +180,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, o
           {/* Reset Demo Data */}
           <section className="pt-4 border-t border-white/10 flex items-center justify-between">
             <div>
-              <p className="font-semibold text-white text-xs">Demo Verilerini Sıfırla</p>
-              <p className="text-[11px] text-gray-400">Varsayılan gönderiler ve bildirimler yüklenir.</p>
+              <p className="font-semibold text-white text-xs">Okul Verilerini Sıfırla</p>
+              <p className="text-[11px] text-gray-400">Varsayılan Mehmet Serttaş AL gönderi ve bildirimleri yüklenir.</p>
             </div>
             <button
               type="button"
