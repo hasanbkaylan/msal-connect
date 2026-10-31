@@ -61,7 +61,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <span className="font-extrabold text-lg text-white tracking-wide block leading-tight">
               MSAL Connect
             </span>
-            <span className="text-[11px] font-medium text-gray-400">Mastodon Fediverse</span>
+            <span className="text-[11px] font-medium text-gray-400 truncate block">
+              Mehmet Serttaş Anadolu Lisesi
+            </span>
           </div>
         </div>
 

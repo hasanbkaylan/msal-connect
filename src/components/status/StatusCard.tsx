@@ -109,9 +109,9 @@ export const StatusCard: React.FC<StatusCardProps> = ({
       <div className="flex items-start gap-3.5">
         {/* Author Avatar */}
         <Avatar
-          src={status.account.avatar}
-          alt={status.account.displayName}
-          onClick={() => onAccountClick?.(status.account)}
+          src={status.account?.avatar || ''}
+          alt={status.account?.displayName || 'Kullanıcı'}
+          onClick={() => status.account && onAccountClick?.(status.account)}
         />
 
         {/* Content Column */}
@@ -120,13 +120,13 @@ export const StatusCard: React.FC<StatusCardProps> = ({
           <div className="flex items-baseline justify-between gap-2 mb-1">
             <div
               className="flex items-baseline gap-1.5 truncate cursor-pointer"
-              onClick={() => onAccountClick?.(status.account)}
+              onClick={() => status.account && onAccountClick?.(status.account)}
             >
               <span className="font-bold text-white text-[15px] truncate hover:underline">
-                {status.account.displayName}
+                {status.account?.displayName || 'Anonim'}
               </span>
               <span className="text-gray-400 text-xs truncate">
-                @{status.account.username}
+                @{status.account?.username || 'user'}
               </span>
             </div>
 

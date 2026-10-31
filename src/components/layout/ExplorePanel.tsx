@@ -45,15 +45,15 @@ export const ExplorePanel: React.FC<ExplorePanelProps> = ({ trends, onSelectTag,
       <div className="bg-[#282c37] border border-white/10 rounded-xl p-4 shadow-sm">
         <div className="flex items-center gap-2 text-white font-bold text-sm mb-1">
           <Sparkles size={16} className="text-[#6364ff]" />
-          <span>MSAL Connect Fediverse</span>
+          <span>MSAL Connect • Kampüs</span>
         </div>
         <p className="text-xs text-gray-300 leading-relaxed">
-          Mehmet Salih Acar tarafından geliştirilen açık kaynak ve merkeziyetsiz Mastodon kopyasıdır. Supabase ile uyumlu ve GitHub Pages üzerinden bağımsız çalışır.
+          Mehmet Serttaş Anadolu Lisesi öğrenci ve öğretmenleri için geliştirilmiş bağımsız, Fediverse uyumlu okul sosyal ağıdır.
         </p>
         <div className="mt-3 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-gray-400">
           <span className="flex items-center gap-1">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            v4.2 Fediverse Uyumlu
+            Mehmet Serttaş AL
           </span>
           <span className="font-mono">connect.msal.org</span>
         </div>
@@ -131,7 +131,7 @@ export const ExplorePanel: React.FC<ExplorePanelProps> = ({ trends, onSelectTag,
           <span className="hover:underline cursor-pointer">Supabase</span>
           <span className="hover:underline cursor-pointer">GitHub</span>
         </div>
-        <p className="pt-2 text-gray-400">© 2025 MSAL Connect. Fediverse & ActivityPub destekli.</p>
+        <p className="pt-2 text-gray-400">© 2025 Mehmet Serttaş Anadolu Lisesi (MSAL Connect).</p>
       </footer>
     </aside>
   );
